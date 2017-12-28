@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700');
+@import url('https://fonts.googleapis.com/css?family=Signika');
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+
+h1 {
+    font-size: 40px;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    color: #fff;
+}
+
+/* Shows message when user registers */
+
+#registered {
+    margin-top: 50px;
+}
+
+#registered img {
+    margin-bottom: 0px;
+    width: 100px;
+    height: 100px;
+}
+
+#registered span {
+    clear: both;
+    display: block;
+}
+
+img {
+    margin-bottom: 20px;
+}
+
+.avatar {
+    margin: 10px 0 20px 0;
+    color: #fff;
+    font-family: Signika, sans-serif;
+    font-size: 15px;
+}
+
+.module {
+    position: relative;
+    top: 10%;
+    height: 60%;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.user {
+    color: #fff;
+    font-weight: bold;
+}
+
+.userlist {
+    float: left;
+    padding: 30px;
+}
+
+.userlist span {
+    color: #fff;
+}
+
+.welcome {
+    position: relative;
+    top: 30%;
+    height: 65%;
+    width: 900px;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-right: auto;
+}
+
+::-moz-selection {
+    background: #fff;
+}
+
+::selection {
+    background: #fff;
+}
+
+input::-moz-selection {
+    background: #fff;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: radial-gradient(ellipse at bottom, #273444 0%, #050714 100%);
+}
+
+.body-content {
+    position: relative;
+    top: 20px;
+    height: 700px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background: transparent;
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    height: 35px;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border: solid 2px #9dbfc4;
+    background-color: transparent;
+    color: #9dbfc4;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 0 10px;
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -webkit-transition: background-position .5s,
+    background-color .5s,
+    border-color .5s,
+    box-shadow .5s;
+    transition: background-position .5s,
+    background-color .5s,
+    border-color .5s,
+    box-shadow .5s;
+}
+
+select:hover,
+textarea:hover,
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover {
+    border-color: #0d7180;
+    background-color: #8fd6e0;
+    color: #0d7180;
+}
+
+select:focus,
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    border: 2px solid #0d7180;
+    color: #0d7180;
+} 
+
+.btn {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 5px 0;
+    padding: 8px 20px;
+    font-size: 18px;
+    line-height: 20px;
+    height: 40px;
+    background-color: #76c0d6;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    box-shadow: 0px 2px #5a5959;
+    -webkit-transition: background-position .2s,
+    background-color .2s,
+    border-color .5s,
+    box-shadow .5s;
+    transition: background-position .2s,
+    background-color .2s,
+    border-color .5s,
+    box-shadow .5s;
+}
+
+.btn.active,
+.btn:active {
+    padding: 5px 19px 2px 21px;
+    background-color: #0d7180;
+    box-shadow: 0px 2px #5a5959;
+}
+
+.btn.disabled:active,
+.btn[disabled]:active,
+.btn.disabled.active,
+.btn[disabled].active {
+    padding: 6px 20px !important;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #0d7180;
+    color: #fff;
+    border: 0;
+    box-shadow: 0 2px 2px #0000004d, 0 0 0 1px #ffffff26 inset;
+}
+
+.btn-primary {
+    background-color: #76c0d6;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    box-shadow: 0px 2px #5a5959;
+    -webkit-transition: background-position .2s,
+    background-color .2s,
+    border-color .5s,
+    box-shadow .5s;
+    transition: background-position .2s,
+    background-color .2s,
+    border-color .5s,
+    box-shadow .5s;
+    background-image: linear-gradient(to bottom, #76c0d6, #76c1d69f);
+    box-shadow: 0 2px 2px #0000004d, 0 0 0 1px #ffffff26 inset;
+}
+
+.btn-block {
+    width: 100%;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.alert {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 4px 20px 4px 20px;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: Signika, sans-serif;
+    margin-bottom: 20px;
+    position: relative;
+    color: #db2525;
+    border: 1px solid #fff;
+    background-color: #0d7180;
+
+}
+
+.alert:empty {
+    display: none;
+}
+
+.alert-success {
+    color: #17aa30;
+    background-color: #03360b;
+    box-shadow: 0 0 0 1px #03360b inset, 0 5px 10px #000000bf;
+}
